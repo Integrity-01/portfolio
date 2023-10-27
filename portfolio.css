@@ -1,0 +1,91 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    width: 100%;
+}
+
+#myName{
+    font-family: Abril Fatface;
+}
+
+#hero{
+    background-image: url('hero1.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+.info{
+    font-size: 3em;
+    padding-top: 2.5em;
+}
+p{
+    font-family: monospace;
+}
+i{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+#myPics{
+    width: 300px;
+    height: auto;
+}
+
+#services {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#services::before {
+    content: "";
+    background-image: url('servicebkg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bkg{
+    background: rgba(227, 200, 200, 0.2);
+    padding: 1em;
+    height: 90%;
+}
+
+@media (min-width:480px){
+    #hero{
+        height: 700px;
+    }
+    .info{
+        font-size: 4em;
+        padding-top: 2.5em;
+    }
+    .aboutP{
+        padding-top: 200px;
+    }
+    #myPics{
+        width: 500px;
+        height: 600px;
+    }
+    .servicesPara{
+        padding-top: 100px;
+    }
+    .pjt, .about{
+        margin-bottom: 500px ;
+    }
+    .d-block{
+        height: 50%;
+    }
+}
